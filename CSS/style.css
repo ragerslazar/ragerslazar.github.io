@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+p {
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+    background-image: url("../IMG/53592-Pixel-Art-Galaxy.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Header */
+.container-xxl {
+    margin-top: 1vh;
+    padding-left: 1vw !important;
+    padding-right: 1vw !important;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.402);
+    padding: 1%;
+    text-align: center;
+}
+
+.container p {
+    margin-bottom: 0;
+}
+
+.Lieu {
+    color: rgb(25, 22, 227);
+}
+
+#photo-id {
+    margin-left: 2%;
+    position: relative;
+    top: 5vh;
+}
+
+#btn-gh, #btn-li, #btn-cv {
+    width: 100%;
+}
+
+#socials {
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.386);
+    border-radius: 25px;
+    padding: 0.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.col {
+    padding: 0;
+}
+
+hr {
+    margin-top: 2vh !important;
+    margin-bottom: 2vh !important;
+    border: 1.5px solid rgb(54 60 249) !important;
+    opacity: 1 !important;
+}
+
+/* Fin Header */
+
+/* Main */
+#skills {
+    margin: 0 35% 0 35%;
+    position: relative;
+	&:after {
+	  --deco-height: 0.3125em;
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  bottom: calc(var(--deco-height) * -0.625);
+	  height: var(--deco-height);
+	  background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+	  background-size: auto 100%;
+	  background-repeat: round;
+	  background-position: 0em;
+	}
+}
+
+#exp {
+    margin: 0 24% 0 24%;
+    position: relative;
+	&:after {
+	  --deco-height: 0.3125em;
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  bottom: calc(var(--deco-height) * -0.625);
+	  height: var(--deco-height);
+	  background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+	  background-size: auto 100%;
+	  background-repeat: round;
+	  background-position: 0em;
+	}
+}
+
+#skills-table {
+    margin-top: 3vh;
+    border:solid black 1px;
+    border-radius: 20px;
+}
+
+
+tbody th {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.icon-skills {
+    width: 20vw;
+    height: 5vh;
+}
+
+.mariadb {
+    width: 5vw;
+    height: 5vh;
+}
+
+.card-section {
+    gap: 25px;
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 3vh;
+}
+
+.card-text-desc {
+    margin-top: 1vh;
+    text-align: left;
+}
+
+.card-section.card-img-top {
+    height: 18vh !important;
+}
+
+#formations {
+    margin: 0 36% 2% 38%;
+    position: relative;
+	&:after {
+	  --deco-height: 0.3125em;
+	  content: "";
+	  position: absolute;
+	  left: 0;
+	  right: 0;
+	  bottom: calc(var(--deco-height) * -0.625);
+	  height: var(--deco-height);
+	  background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+	  background-size: auto 100%;
+	  background-repeat: round;
+	  background-position: 0em;
+	}
+}
+
+.formations-section img#ipssi {
+    height: 20vh !important;
+    /*object-position: 100% 44%;*/
+    object-fit: contain;
+    background-color: #140fd2;
+}
+
+.formations-section img#roosevelt {
+    height: 15vh !important;
+    /*object-position: 100% 44%;*/
+    object-fit: contain;
+    background-color: white;
+}
+
+.formations-section p {
+    color: black;
+}
+
+.ipssi-competences p, .ipssi-prog p, .ipssi-outils p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.ipssi-desc {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-mb3 {
+    row-gap: 20px;
+}
+/* Fin Main */
