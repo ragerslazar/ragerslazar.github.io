@@ -7,5 +7,5 @@ document.getElementById("btn-li").addEventListener("click", function() {
 });
 
 document.getElementById("btn-cv").addEventListener("click", function() {
-    window.open("http://localhost/projets/Portfolio%20Dev%20FullStack/PDF/CV_Lazar_Lazarevic.pdf", "_blank")
+    window.open("http://localhost/projets/portfolio_github/PDF/CV_Lazar_Lazarevic.pdf", "_blank")
 });
