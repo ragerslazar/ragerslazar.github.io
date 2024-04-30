@@ -4,7 +4,23 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
+    min-width: 0;
+}
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-animation-name: fadeInOpacity;
+        animation-name: fadeInOpacity;
+    -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+    min-height: 100%;
 }
 
 p {
@@ -35,7 +51,7 @@ body {
     text-align: center;
 }
 
-.container p {
+.container-xxl p {
     margin-bottom: 0;
 }
 
@@ -95,7 +111,7 @@ hr {
 }
 
 #exp {
-    margin: 0 24% 0 24%;
+    margin: 0 24% 2% 24%;
     position: relative;
 	&:after {
 	  --deco-height: 0.3125em;
@@ -138,7 +154,10 @@ tbody th {
     gap: 25px;
     display: inline-flex;
     flex-direction: row;
-    margin-top: 3vh;
+}
+
+.card-section p {
+    color: black
 }
 
 .card-text-desc {
@@ -146,9 +165,11 @@ tbody th {
     text-align: left;
 }
 
+/*
 .card-section.card-img-top {
     height: 18vh !important;
 }
+*/
 
 #formations {
     margin: 0 36% 2% 38%;
@@ -186,17 +207,143 @@ tbody th {
     color: black;
 }
 
-.ipssi-competences p, .ipssi-prog p, .ipssi-outils p {
+.ipssi-desc p, .roosevelt-desc p {
     margin-bottom: 0;
     text-align: center;
 }
 
-.ipssi-desc {
+.ipssi-desc, .roosevelt-desc {
     display: flex;
     justify-content: space-around;
 }
 
-.card-mb3 {
-    row-gap: 20px;
+.roosevelt-desc {
+    margin-right: 3%;
 }
+
+#projets {
+    margin: 0 42% 2% 42%;
+    position: relative;
+    &:after {
+      --deco-height: 0.3125em;
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(var(--deco-height) * -0.625);
+      height: var(--deco-height);
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23a)'%3E%3Cpath d='M-17 30.5C-1 22 72-4 54 13 37.9 28.2-2.5 57.5 16 55.5s72-29 104-40' stroke='%2300FDCF' stroke-width='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='a'%3E%3Cpath fill='%23fff' d='M0 0h100v64H0z'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+      background-size: auto 100%;
+      background-repeat: round;
+      background-position: 0em;
+    }
+}
+
+.projets-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 80px;
+}
+
+.projets-section .card {
+    margin-bottom: 3%;
+}
+
+.projets-section li {
+    text-align: left;
+}
+
+#p1, #p2, #p3 {
+    height: fit-content;
+}
+
 /* Fin Main */
+
+
+
+/* Media queries */
+@media screen and (min-width: 279px) and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden;
+    }
+
+    .col-6.col-md-4 {
+        display: none;
+    } 
+
+    #skills {
+        margin: 0 20% 0 20%;
+    }
+
+    #exp {
+        margin: 0 15% 5% 15%;
+    }
+
+    #exp_1, #exp_2 {
+        width: 20rem !important;
+        max-height: 50rem;
+    }
+
+    .card-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    img[alt="carct-card"], img[alt="novacel-card"] {
+        max-height: 10rem;
+    }
+
+    #formations {
+        margin: 0 22% 5% 22%;
+    }
+
+    .formations-section {
+        max-width: 20rem;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+    }
+
+    #formation_roosevelt {
+        min-width: 20rem !important;
+    }
+
+    .ipssi-desc {
+        flex-wrap: wrap;
+    }
+
+    .ipssi-framework, .ipssi-prog, .roosevelt-framework, .roosevelt-prog {
+        margin-bottom: 4%;
+    }
+
+    .roosevelt-desc {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    #projets {
+        margin: 0 30% 5% 30%;
+    }
+
+    img[alt="gh-stats"] {
+        width: 80% !important;
+        height: 100% !important;
+        margin-bottom: 10%;
+    }
+
+    .projets-section {
+        max-width: 20rem !important;
+        margin-left: 10%;
+    }
+
+    .projets-section .card {
+        margin-bottom: 4%;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 7680px) {
+
+}
