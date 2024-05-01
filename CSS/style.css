@@ -243,7 +243,6 @@ tbody th {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    column-gap: 80px;
 }
 
 .projets-section .card {
@@ -258,9 +257,15 @@ tbody th {
     height: fit-content;
 }
 
+button#btn-cv-phone, button#btn-li-phone, button#btn-gh-phone {
+    display: none;
+}
+
+#col-gh-desk, #col-li-desk, #col-cv-desk {
+    display: none;
+}
+
 /* Fin Main */
-
-
 
 /* Media queries */
 @media screen and (min-width: 279px) and (max-width: 480px) {
@@ -273,15 +278,14 @@ tbody th {
     } 
 
     #skills {
-        margin: 0 20% 0 20%;
+        margin: 0 15% 0 15%;
     }
 
     #exp {
-        margin: 0 15% 5% 15%;
+        margin: 0 12% 5% 12%;
     }
 
     #exp_1, #exp_2 {
-        width: 20rem !important;
         max-height: 50rem;
     }
 
@@ -296,18 +300,21 @@ tbody th {
     }
 
     #formations {
-        margin: 0 22% 5% 22%;
+        margin: 0 21% 5% 21%;
     }
 
     .formations-section {
-        max-width: 20rem;
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-left: 10%;
+    }
+    
+    .card.mb-3 {
+        width: 19rem;
     }
 
-    #formation_roosevelt {
-        min-width: 20rem !important;
+    .card {
+        width: 19rem !important;
     }
 
     .ipssi-desc {
@@ -334,16 +341,35 @@ tbody th {
         margin-bottom: 10%;
     }
 
-    .projets-section {
-        max-width: 20rem !important;
-        margin-left: 10%;
-    }
-
     .projets-section .card {
         margin-bottom: 4%;
     }
+
+    button#btn-cv-phone, button#btn-li-phone, button#btn-gh-phone {
+        display: block;
+    }
+
+    #col-gh-desk, #col-li-desk, #col-cv-desk {
+        display: block;
+    }
+
+    #col-cv-phone, #col-li-phone, #col-gh-phone {
+        display: none;
+    }
+
+    button#btn-cv, button#btn-li, button#btn-gh {
+        display: none;
+    }
+
+    #socials {
+        padding: 2vw;
+    }
+
+    #btn-gh-phone, #btn-li-phone, #btn-cv-phone {
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 1025px) and (max-width: 7680px) {
 
-}
+/*@media screen and (min-width: 1025px) and (max-width: 7680px) {
+}*/
