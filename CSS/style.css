@@ -368,6 +368,10 @@ button#btn-cv-phone, button#btn-li-phone, button#btn-gh-phone {
     #btn-gh-phone, #btn-li-phone, #btn-cv-phone {
         width: 100%;
     }
+
+    .row {
+        padding: 0 5% 0 5%;
+    }
 }
 
 
