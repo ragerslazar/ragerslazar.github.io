@@ -189,11 +189,15 @@ tbody th {
 	}
 }
 
-.formations-section img#ipssi {
+
+.card.mb-3 {
+    background-color:rgb(229, 243, 241); 
+}
+
+.formations-section img#ece {
     height: 20vh !important;
-    /*object-position: 100% 44%;*/
     object-fit: contain;
-    background-color: #140fd2;
+    background-color: #ffffff;
 }
 
 .formations-section img#roosevelt {
@@ -207,12 +211,12 @@ tbody th {
     color: black;
 }
 
-.ipssi-desc p, .roosevelt-desc p {
+.ece-desc p, .roosevelt-desc p {
     margin-bottom: 0;
     text-align: center;
 }
 
-.ipssi-desc, .roosevelt-desc {
+.ece-desc, .roosevelt-desc {
     display: flex;
     justify-content: space-around;
 }
@@ -317,11 +321,11 @@ button#btn-cv-phone, button#btn-li-phone, button#btn-gh-phone {
         width: 19rem !important;
     }
 
-    .ipssi-desc {
+    .ece-desc {
         flex-wrap: wrap;
     }
 
-    .ipssi-framework, .ipssi-prog, .roosevelt-framework, .roosevelt-prog {
+    .ece-framework, .ece-prog, .roosevelt-framework, .roosevelt-prog {
         margin-bottom: 4%;
     }
 
