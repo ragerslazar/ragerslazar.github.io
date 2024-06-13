@@ -15,10 +15,10 @@ document.getElementById("btn-li-phone").addEventListener("click", function() {
 });
 
 document.getElementById("btn-cv").addEventListener("click", function() {
-    window.open("https://github.com/ragerslazar/ragerslazar.github.io/blob/main/PDF/CV_Lazar_Lazarevic.pdf", "_blank")
+    window.open("https://github.com/ragerslazar/ragerslazar.github.io/blob/main/CV/CV_LAZAREVIC_LAZAR.pdf", "_blank")
 });
 
 document.getElementById("btn-cv-phone").addEventListener("click", function() {
-    window.open("https://github.com/ragerslazar/ragerslazar.github.io/blob/main/PDF/CV_Lazar_Lazarevic.pdf", "_blank")
+    window.open("https://github.com/ragerslazar/ragerslazar.github.io/blob/main/CV/CV_LAZAREVIC_LAZAR.pdf", "_blank")
 });
 
