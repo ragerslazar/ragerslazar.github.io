@@ -62,7 +62,8 @@ body {
 #photo-id {
     margin-left: 2%;
     position: relative;
-    top: 5vh;
+    height: 30vh;
+    width: auto;
 }
 
 #btn-gh, #btn-li, #btn-cv {
@@ -221,6 +222,10 @@ tbody th {
     justify-content: space-around;
 }
 
+.card-title_2 {
+    width: 16vw;
+}
+
 .roosevelt-desc {
     margin-right: 3%;
 }
@@ -325,7 +330,7 @@ button#btn-cv-phone, button#btn-li-phone, button#btn-gh-phone {
         flex-wrap: wrap;
     }
 
-    .ece-framework, .ece-prog, .roosevelt-framework, .roosevelt-prog {
+    .ece-framework, .ece-prog, .ece-devops, .roosevelt-framework, .roosevelt-prog {
         margin-bottom: 4%;
     }
 
